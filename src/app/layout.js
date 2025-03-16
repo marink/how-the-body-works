@@ -1,0 +1,44 @@
+
+
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
+import { ThemeProvider } from '@mui/material/styles';
+import {CssBaseline, Container} from '@mui/material';
+import theme from '@theme';
+
+import AppBar, { AppBarSpacer } from "@components/AppBar";
+
+export const metadata = {
+    title: "How the Body Works",
+    description: "General information about how the human body works",
+    metadataBase: new URL("https://marink.github.io"), // Change this to your actual base URL
+};
+
+export default async function RootLayout({children: pageContent}) {
+    return (
+        <html lang="en">
+            <body>
+                <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+                    <ThemeProvider theme={theme}>
+
+                        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+                        <CssBaseline />
+
+
+                        { /* Main container for application pages */}
+                        <Container maxWidth={false} disableGutters>
+
+                            { /* Top navigation bar for all pages */}
+                            <AppBar />
+                            <AppBarSpacer />
+
+                            { /* Pages content for all pages */}
+                            {pageContent}
+
+                        </Container>
+
+                    </ThemeProvider>
+                </AppRouterCacheProvider>
+            </body>
+        </html>
+    );
+}
