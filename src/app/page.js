@@ -1,13 +1,17 @@
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
-export default function Home() {
+export default async function Home() {
+
   return (
     <div className={styles.page}>
     <header>
         <h1>Welcome to "How the Human Body Works"!</h1>
     </header>
     <main className={styles.main}>
+        <h1>Introduction</h1>
         <p>
             This site is your guide to understanding the incredible machine that is the human body.
             My aim is to make science accessible and engaging for everyone, regardless of your background.
@@ -21,6 +25,16 @@ export default function Home() {
             Whether you’re a curious student, a parent answering your child’s questions, or someone simply fascinated by the human body,
             this site is here to provide knowledge and spark wonder. Let’s dive in and uncover the secrets of how we work!
         </p>
+        <h1>What You Will Find Here</h1>
+        <p>
+            In this site, you will find a variety of resources designed to help you understand the human body and its functions.
+            Here are some of the key sections:
+        </p>
+        <ul>
+            <li><Link href="/cells"><strong>Cells</strong>: a study of the human cells and processes.</Link></li>
+            <li><strong>Endocrine System</strong>: a thorough look at hormones and how they affect behavior.</li>
+            <li><strong>Health</strong>: how different foods affect body processes.</li>
+        </ul>
         <p>
             <i>The content for this page has ben generated with Microsoft Copilot.</i>
         </p>

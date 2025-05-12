@@ -15,8 +15,11 @@
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
     "@mui/material-nextjs": "latest",
+    "jstoxml": "^5.0.2",
     "next": "latest",
+    "raw-loader": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "sax": "latest"
   }
 }
