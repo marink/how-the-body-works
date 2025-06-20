@@ -15,11 +15,14 @@
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
     "@mui/material-nextjs": "latest",
+    "html-react-parser": "^5.2.5",
     "jstoxml": "^5.0.2",
+    "marked": "^15.0.12",
     "next": "latest",
-    "raw-loader": "latest",
+    "raw-loader": "^4.0.2",
     "react": "latest",
     "react-dom": "latest",
-    "sax": "latest"
+    "sax": "latest",
+    "shiki": "^3.6.0"
   }
 }

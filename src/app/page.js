@@ -32,12 +32,10 @@ export default async function Home() {
         </p>
         <ul>
             <li><Link href="/cells"><strong>Cells</strong>: a study of the human cells and processes.</Link></li>
-            <li><strong>Endocrine System</strong>: a thorough look at hormones and how they affect behavior.</li>
-            <li><strong>Health</strong>: how different foods affect body processes.</li>
+            <li><Link href="/endocrine-system"><strong>Endocrine System</strong>: a thorough look at hormones and how they affect behavior.</Link></li>
+            <li><Link href="/health"><strong>Health</strong>: how different foods affect body processes.</Link></li>
         </ul>
-        <p>
-            <i>The content for this page has ben generated with Microsoft Copilot.</i>
-        </p>
+        
       </main>
       <footer className={styles.footer}>
         <a
