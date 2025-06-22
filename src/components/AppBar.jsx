@@ -7,7 +7,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import AdbIcon from '@mui/icons-material/Adb';
-
+import Link from 'next/link';
 import { makeStyles } from '@components/styles';
 
 /**
@@ -75,14 +75,17 @@ const AppName = () => {
         textDecoration: 'none'
     };
 
-    return (
-        <Typography
-                variant="h6" // H6 header
-                component="a" // Anchor link
-                href="/" // Point to home page
-                noWrap sx={styles}>
-            How the Body Works
-        </Typography>
+    return (        
+        <Link href="/" passHref legacyBehavior>
+            <Typography
+                variant="h6"
+                component="a"
+                noWrap
+                sx={styles}
+            >
+                How the Body Works
+            </Typography>
+        </Link>
     )
 }
 

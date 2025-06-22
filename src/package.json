@@ -19,6 +19,7 @@
     "jstoxml": "^5.0.2",
     "marked": "^15.0.12",
     "next": "latest",
+    "path-browserify": "^1.0.1",
     "raw-loader": "^4.0.2",
     "react": "latest",
     "react-dom": "latest",

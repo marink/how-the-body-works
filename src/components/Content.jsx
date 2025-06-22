@@ -5,10 +5,14 @@ import { useEffect, useState } from "react";
 
 import Citation from "@components/Citation";
 
+import path from "path-browserify";
+
 import { marked } from "marked";
 import parse from 'html-react-parser';
 
 import { createHighlighter, bundledLanguages, bundledThemes } from 'shiki';
+
+import {addBasePath} from  'next/dist/client/add-base-path';
 
 import "./markdown.css";
 
@@ -33,7 +37,7 @@ const options = {
  *      and displays the HTML content. It handles both markdown files and directories
  *      (defaulting to `README.md` if a directory is specified).
  */
-export default function Content({ contentPath }) {
+export default function Content({ contentPath, basePath }) {
 
     // State hooks for managing the HTML content
     const [html, setHtml] = useState("Loading content...");
@@ -44,13 +48,14 @@ export default function Content({ contentPath }) {
         contentPath = path.join(contentPath, "README.md");
     }
 
+
     useEffect(() => {
 
         /**
          * Fetch the markdown file from the server and convert it to HTML.
          * Uses `unified` with `remark` and `rehype` plugins to process the markdown.
          *
-         * @param {string} path - The path to the markdown file.
+         * @param {string} contentPath - The path to the markdown file.
          * @returns {Promise<void>} - A promise that resolves when the markdown is fetched and processed.
          * @throws {Error} - Throws an error if the fetch fails or the response is not ok.
          * @example
@@ -58,7 +63,7 @@ export default function Content({ contentPath }) {
          *         .then(() => console.log('Markdown fetched and processed'))
          *         .catch(error => console.error('Error fetching markdown:', error));
          */
-        async function fetchContent(path) {
+        async function fetchContent(contentPath) {
 
             const highlighter = await createHighlighter({
                 // In this case, we include the "js" language specifier to ensure that
@@ -69,14 +74,18 @@ export default function Content({ contentPath }) {
             })
 
             try {
-                const response = await fetch(path);
+
+                // Prepend basePath if not already present
+                const fetchPath = addBasePath(contentPath);
+ 
+                const response = await fetch(fetchPath);
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
                 }
 
                 var text = await response.text();
 
-                if (path.endsWith(".md")) {
+                if (contentPath.endsWith(".md")) {
                     text = await marked.use(markedShiki({
                         highlight(code, lang) {
                             return highlighter.codeToHtml(code, {
@@ -90,7 +99,7 @@ export default function Content({ contentPath }) {
                 setHtml(parse(text, options));
             } catch (error) {
                 console.error("Error fetching markdown:", error);
-                setHtml(`<h1>File not found ${path}</h1>`);
+                setHtml(`<h1>File not found ${contentPath}</h1>`);
             } finally {
                 // Dispose of the highlighter to free up resources
                 highlighter.dispose();
