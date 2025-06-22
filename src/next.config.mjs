@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+
+    basePath: '/how-the-body-works',
+    assetPrefix: '/how-the-body-works/',
+    
     // webpack: (config, { isServer }) => {
     //     config.module.rules.push({
     //         test: /\.(md|html)$/i,
