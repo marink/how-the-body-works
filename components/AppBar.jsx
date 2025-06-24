@@ -35,7 +35,7 @@ function ResponsiveAppBar() {
                     <AppLogo />
                     <AppName />
 
-                    <AccessibilityIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+                    {/* <AccessibilityIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
 
                 </Toolbar>
             </Container>
@@ -51,13 +51,15 @@ function ResponsiveAppBar() {
 const AppLogo = () => {
     const imageSrc = addBasePath("/images/human-body.png");
     return (
-        <Box component="img"
-                sx={{
-                    // display: { xs: 'none', md: 'flex' },
-                    width: 64,
-                    paddingRight: 1
-                }}
-                src={imageSrc} />
+        <Link href="/">
+            <Box component="img"
+                    sx={{
+                        // display: { xs: 'none', md: 'flex' },
+                        width: 64,
+                        paddingRight: 1
+                    }}
+                    src={imageSrc} />
+        </Link>
     )
 }
 
