@@ -4,8 +4,6 @@ import { ThemeProvider } from '@mui/material/styles';
 import {CssBaseline, Container} from '@mui/material';
 import theme from '@theme';
 
-import "./globals.css";
-
 import AppBar, { AppBarSpacer } from "@components/AppBar";
 
 export const metadata = {
@@ -20,7 +18,7 @@ export default async function RootLayout({children: pageContent}) {
     return (
         <html lang="en">
             <body>
-                <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+                <AppRouterCacheProvider>
                     <ThemeProvider theme={theme}>
 
                         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}

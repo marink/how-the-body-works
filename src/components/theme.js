@@ -7,7 +7,13 @@ import { red } from '@mui/material/colors';
  */
 const theme = createTheme({
     typography: {
-        fontFamily: "MMSharpSans, Helvetica, Arial, sans-serif",
+        fontFamily: 'SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif',
+        pageTitle1: {
+            fontSize: '2.5rem',
+            fontWeight: 700,
+            lineHeight: 1.2,
+            letterSpacing: '-0.02em',
+        },
         h1: {
             fontSize: "2rem"
         },

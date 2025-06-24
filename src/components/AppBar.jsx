@@ -20,14 +20,15 @@ import { addBasePath } from 'next/dist/client/add-base-path';
  */
 function ResponsiveAppBar() {
 
-    return (
-        <AppBar position="fixed" sx={{
-            boxShadow: 2,
-            bgcolor: "#fffc",
-            backdropFilter: "saturate(180%) blur(5px)",
-            height: 60
+    const style = {
+        boxShadow: 2,
+        bgcolor: "#fffc",
+        backdropFilter: "saturate(180%) blur(5px)",
+        height: 60
 
-        }}>
+    };
+    return (
+        <AppBar position="fixed" sx={style} color="default">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
 
@@ -73,7 +74,6 @@ const AppName = () => {
         fontFamily: 'monospace',
         fontWeight: 700,
         letterSpacing: '.3rem',
-        color: 'black',
         textDecoration: 'none'
     };
 
