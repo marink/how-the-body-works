@@ -8,7 +8,7 @@ export default async function Home() {
   return (
     <div className={styles.page}>
     <header>
-        <h1>Welcome to "How the Human Body Works"!</h1>
+        <h1 className="title">How the Human Body Works</h1>
     </header>
     <main className={styles.main}>
         <h1>Introduction</h1>

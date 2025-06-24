@@ -1,7 +1,6 @@
 
 
 import React from 'react';
-import "@components/markdown.css";
 
 export default function CellsPage() {
     return (

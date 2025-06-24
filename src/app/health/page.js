@@ -1,9 +1,8 @@
 import React from "react";
-import "@components/markdown.css";
 
 export default function Page() {
     return (
-        <div className="markdown-body">
+        <div>
             <h1>Health</h1>
             <p>Health is a state of complete physical, mental, and social well-being and not merely the absence of disease or infirmity.</p>
             <p>It is a resource for everyday life, not the objective of living. Health is a positive concept emphasizing social and personal resources,

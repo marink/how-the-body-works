@@ -9,6 +9,7 @@ import Container from '@mui/material/Container';
 import AdbIcon from '@mui/icons-material/Adb';
 import Link from 'next/link';
 import { makeStyles } from '@components/styles';
+import { addBasePath } from 'next/dist/client/add-base-path';
 
 /**
  * Responsive application bar for the main application.
@@ -47,6 +48,7 @@ function ResponsiveAppBar() {
  * @returns
  */
 const AppLogo = () => {
+    const imageSrc = addBasePath("/images/human-body.jpeg");
     return (
         <Box component="img"
                 sx={{
@@ -54,7 +56,7 @@ const AppLogo = () => {
                     width: 32,
                     paddingRight: 1
                 }}
-                src="human-body.jpeg" />
+                src={imageSrc} />
     )
 }
 

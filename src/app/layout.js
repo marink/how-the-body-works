@@ -4,6 +4,8 @@ import { ThemeProvider } from '@mui/material/styles';
 import {CssBaseline, Container} from '@mui/material';
 import theme from '@theme';
 
+import "./globals.css";
+
 import AppBar, { AppBarSpacer } from "@components/AppBar";
 
 export const metadata = {
@@ -12,7 +14,9 @@ export const metadata = {
     metadataBase: new URL("https://marink.github.io"), // Change this to your actual base URL
 };
 
+
 export default async function RootLayout({children: pageContent}) {
+
     return (
         <html lang="en">
             <body>

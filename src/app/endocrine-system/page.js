@@ -3,14 +3,9 @@
 import React from 'react';
 
 import Content from '@components/Content';
-
-import { useRouter } from "next/navigation";
+import Conversion from '@app/content/glucose/conversion';
 
 export default function Page() {
-    
-    const router = useRouter();
-
-    console.log("Router basePath:", router);
 
     return (
         <div className="markdown-body">
@@ -18,12 +13,12 @@ export default function Page() {
             <p>The endocrine system is a complex network of glands and organs that produce and secrete hormones into the bloodstream.
                 These hormones regulate various bodily functions, including metabolism, growth, and mood.</p>
             
-            <Content contentPath="/content/glucose/conversion.html" basePath={router.basePath}/>
-            {/* Icon: Timeline Illustration */}
-            <Content contentPath="/content/glucose/timeline.html" basePath={router.basePath}/>
-                {/* Icon: Insulin Resistance Pathway */}
-            {/* Icon: Ketosis vs Insulin Resistance */}
-            <Content contentPath="/content/insulin/ketosis-comparison.html" basePath={router.basePath}/>
+            <Content><Conversion/></Content>
+            {/* Icon: Timeline Illustration * /}
+            <Content contentPath="/content/glucose/timeline.html" />
+                {/* Icon: Insulin Resistance Pathway * /}
+            {/* Icon: Ketosis vs Insulin Resistance * /}
+            <Content contentPath="/content/insulin/ketosis-comparison.html" />
             {/* Icon: Insulin Resistance Pathway */}ß
 
         </div>
