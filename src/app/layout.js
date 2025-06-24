@@ -5,6 +5,7 @@ import {CssBaseline, Container} from '@mui/material';
 import theme from '@theme';
 
 import AppBar, { AppBarSpacer } from "@components/AppBar";
+import Footer from '@components/Footer';
 
 export const metadata = {
     title: "How the Body Works",
@@ -34,6 +35,9 @@ export default async function RootLayout({children: pageContent}) {
 
                             { /* Pages content for all pages */}
                             {pageContent}
+
+                            { /* Footer for all pages */}
+                            <Footer />
 
                         </Container>
 

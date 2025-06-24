@@ -2,13 +2,19 @@
 
 import React from 'react';
 
-import Content from '@components/Content';
+import PageTitle from '@components/PageTitle';
+import PageContent from '@components/PageContent';
+import PageContainer from '@components/PageContainer';
+
+import Hyperglycemia from "@app/content/glucose/hyperglycemia";
 
 export default function Page() {
     return (
-        <div className="markdown-body">
-            <h1>Hyperglycemia</h1>
-            <Content contentPath="/content/glucose/hyperglycemia.html" />
-        </div>
+        <PageContainer>
+            <PageTitle title="Hyperglycemia" />
+            <PageContent>
+                <Hyperglycemia/>
+            </PageContent>
+        </PageContainer>
     );
 }

@@ -6,10 +6,10 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import AdbIcon from '@mui/icons-material/Adb';
 import Link from 'next/link';
 import { makeStyles } from '@components/styles';
 import { addBasePath } from 'next/dist/client/add-base-path';
+import AccessibilityIcon from '@mui/icons-material/Accessibility';
 
 /**
  * Responsive application bar for the main application.
@@ -29,13 +29,13 @@ function ResponsiveAppBar() {
     };
     return (
         <AppBar position="fixed" sx={style} color="default">
-            <Container maxWidth="xl">
+            <Container maxWidth="md">
                 <Toolbar disableGutters>
 
                     <AppLogo />
                     <AppName />
 
-                    <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+                    <AccessibilityIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
 
                 </Toolbar>
             </Container>
@@ -49,12 +49,12 @@ function ResponsiveAppBar() {
  * @returns
  */
 const AppLogo = () => {
-    const imageSrc = addBasePath("/images/human-body.jpeg");
+    const imageSrc = addBasePath("/images/human-body.png");
     return (
         <Box component="img"
                 sx={{
-                    height: 24,
-                    width: 32,
+                    // display: { xs: 'none', md: 'flex' },
+                    width: 64,
                     paddingRight: 1
                 }}
                 src={imageSrc} />
@@ -69,11 +69,11 @@ const AppLogo = () => {
 const AppName = () => {
 
     const styles = {
-        mr: 2,
         display: { xs: 'none', md: 'flex' },
-        fontFamily: 'monospace',
         fontWeight: 700,
-        letterSpacing: '.3rem',
+        fontSize: "2rem",
+        color: "black",
+        paddingBottom: 2,
         textDecoration: 'none'
     };
 
