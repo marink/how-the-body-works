@@ -60,7 +60,7 @@ export default function Footer() {
                 </MuiLink>
                 |
                 <MuiLink target="_blank" rel="noopener noreferrer" sx={linkStyle}
-                        href="https://marin.kokona.websiteç" >
+                        href="https://marin.kokona.website" >
                     <Image aria-hidden src={addBasePath("/images/globe.svg")} alt="Global Site image" width={16} height={16} />
                     Main Site
                 </MuiLink>
