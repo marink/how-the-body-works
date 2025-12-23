@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 
-    basePath: '/how-the-body-works',
+    // basePath: '/how-the-body-works',
     assetPrefix: '/how-the-body-works/',
 
     // webpack: (config, { isServer }) => {
@@ -12,7 +12,7 @@ const nextConfig = {
     //     return config;
     // },
     images: { unoptimized: true },
-    output: "export",
+    // output: "export",
 
     // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
     // trailingSlash: true,
@@ -20,7 +20,7 @@ const nextConfig = {
     // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
     // skipTrailingSlashRedirect: true,
 
-    distDir: "docs",
+    // distDir: "docs",
 };
 
 export default nextConfig;

@@ -33,7 +33,7 @@ export default function Footer() {
             <Container maxWidth="md" sx={{ display: "flex", borderTop: "1px solid #e0e0e0", gap: 2 }}>
                 <MuiLink target="_blank" rel="noopener noreferrer" sx={linkStyle}
                         href="https://www.livescience.com/37009-human-body.html">
-                    <Image aria-hidden src="https://vanilla.futurecdn.net/livescience/1303638/favicon.ico" width={16} height={16} 
+                    <Image aria-hidden src="/images/livescience-fav.ico" width={16} height={16} 
                         alt="Learn more about the human body" />
                     Learn More
                 </MuiLink>
@@ -60,7 +60,7 @@ export default function Footer() {
                 </MuiLink>
                 |
                 <MuiLink target="_blank" rel="noopener noreferrer" sx={linkStyle}
-                        href="https://marink.github.io" >
+                        href="https://marin.kokona.websiteç" >
                     <Image aria-hidden src={addBasePath("/images/globe.svg")} alt="Global Site image" width={16} height={16} />
                     Main Site
                 </MuiLink>
