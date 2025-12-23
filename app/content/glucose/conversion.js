@@ -1,4 +1,4 @@
-import { Typography, Link as MuiLink } from "@mui/material";
+import { Typography } from "@mui/material";
 import Link from "next/link";
 
 export default function Conversion() {
@@ -53,9 +53,9 @@ export default function Conversion() {
 
             <Typography component="p" gutterBottom>
                 Check{" "}
-                <MuiLink component={Link} href="/endocrine-system/hyperglycemia">
+                <Link href="/endocrine-system/hyperglycemia">
                     here
-                </MuiLink>{" "}
+                </Link>{" "}
                 for extreeme effects of glucose on human cells.
             </Typography>
         </>

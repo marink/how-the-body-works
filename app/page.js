@@ -1,6 +1,5 @@
-import { Box, Typography, Link as MuiLink } from "@mui/material";
+import { Typography } from "@mui/material";
 import Link from "next/link";
-import Image from "next/image";
 
 import ContentPage from "@components/PageContainer";
 import PageTitle from "@components/PageTitle";
@@ -36,13 +35,13 @@ export default async function Home() {
                 </Typography>
                 <ul>
                     <li>
-                        <MuiLink component={Link} href="/cells"><strong>Cells</strong>: a study of the human cells and processes.</MuiLink>
+                        <Link href="/cells"><strong>Cells</strong>: a study of the human cells and processes.</Link>
                     </li>
                     <li>
-                        <MuiLink component={Link} href="/endocrine-system"><strong>Endocrine System</strong>: a thorough look at hormones and how they affect behavior.</MuiLink>
+                        <Link href="/endocrine-system"><strong>Endocrine System</strong>: a thorough look at hormones and how they affect behavior.</Link>
                     </li>
                     <li>
-                        <MuiLink component={Link} href="/health"><strong>Health</strong>: how different foods affect body processes.</MuiLink>
+                        <Link href="/health"><strong>Health</strong>: how different foods affect body processes.</Link>
                     </li>
                 </ul>
             </PageContent>            
