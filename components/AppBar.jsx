@@ -54,9 +54,8 @@ const AppLogo = () => {
         <Link href="/">
             <Box component="img"
                     sx={{
-                        // display: { xs: 'none', md: 'flex' },
                         width: 64,
-                        paddingRight: 1
+                        paddingRight: 1,
                     }}
                     src={imageSrc} />
         </Link>
@@ -66,9 +65,9 @@ const AppLogo = () => {
 const NavLinks = () => (
     <Box component="nav" sx={{ display: { xs: 'none', md: 'flex' }, gap: 3, alignItems: 'center' }}>
         {[
+            { href: '/health', label: 'Health' },
             { href: '/cells', label: 'Cells' },
             { href: '/endocrine-system', label: 'Endocrine System' },
-            { href: '/health', label: 'Health' },
         ].map(({ href, label }) => (
             <Link key={href} href={href} passHref legacyBehavior>
                 <Typography component="a" sx={{ fontWeight: 500, color: 'text.primary', textDecoration: 'none', fontSize: '0.95rem', '&:hover': { color: 'primary.main' } }}>
@@ -85,9 +84,12 @@ const AppName = () => {
         display: { xs: 'none', md: 'flex' },
         fontWeight: 700,
         fontSize: "2rem",
-        color: "black",
+        background: 'linear-gradient(135deg, #4B0082 0%, #E65100 100%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text',
         paddingBottom: 2,
-        textDecoration: 'none'
+        textDecoration: 'none',
     };
 
     return (        

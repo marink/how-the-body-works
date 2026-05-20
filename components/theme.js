@@ -8,20 +8,36 @@ import { red } from '@mui/material/colors';
 const theme = createTheme({
     typography: {
         fontFamily: 'SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif',
-        pageTitle1: {
+        pageTitle: {
             fontSize: '2.5rem',
             fontWeight: 700,
             lineHeight: 1.2,
             letterSpacing: '-0.02em',
+            background: 'linear-gradient(135deg, #1B5E20 0%, #00695C 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
         },
         h1: {
-            fontSize: "2rem"
+            fontSize: "2rem",
+            background: 'linear-gradient(135deg, #2E7D32 0%, #00838F 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
         },
         h2: {
-            fontSize: "1.6rem"
+            fontSize: "1.6rem",
+            background: 'linear-gradient(135deg, #388E3C 0%, #00838F 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
         },
         h3: {
-            fontSize: "1.2rem"
+            fontSize: "1.2rem",
+            background: 'linear-gradient(135deg, #43A047 0%, #00897B 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
         },
     },
 

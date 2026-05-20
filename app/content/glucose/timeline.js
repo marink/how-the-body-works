@@ -5,7 +5,7 @@ import Ref from "@components/Ref";
 export default function Timeline() {
     return (
         <Box>
-            <Typography id="timeline" component="h1" variant="h1" gutterBottom sx={{ mt: 5 }}>
+            <Typography id="timeline" component="h1" variant="h1" gutterBottom sx={{ mt: 3.5 }}>
                 Timeline: How Long It Takes for Food to Become Glucose
             </Typography>
             <Typography paragraph>

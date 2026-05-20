@@ -5,7 +5,7 @@ import Ref from "@components/Ref";
 export default function Conversion() {
     return (
         <>
-            <Typography id="carb-digestion" component="h1" variant="h1" gutterBottom sx={{ mt: 5 }}>
+            <Typography id="carb-digestion" component="h1" variant="h1" gutterBottom sx={{ mt: 3.5 }}>
                 How Carbohydrates Are Digested and Converted into Glucose
             </Typography>
 

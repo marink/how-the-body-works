@@ -10,6 +10,7 @@ import KetosisVsInsulinResistance from '@app/content/insulin/ketosis';
 import ContentPage from '@components/PageContainer';
 import PageTitle from '@components/PageTitle';
 import PageContent from '@components/PageContent';
+import Section from '@components/Section';
 import { Typography } from '@mui/material';
 import References from '@components/References';
 import { REFS } from '@app/content/references';
@@ -49,10 +50,10 @@ export default function Page() {
                     when that signaling breaks down.
                 </Typography>
 
-                <Conversion />
-                <Timeline />
-                <InsulinResistance />
-                <KetosisVsInsulinResistance />
+                <Section><Conversion /></Section>
+                <Section alt><Timeline /></Section>
+                <Section><InsulinResistance /></Section>
+                <Section alt><KetosisVsInsulinResistance /></Section>
 
                 <References items={PAGE_REFS} />
 

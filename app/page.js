@@ -54,7 +54,17 @@ export default async function Home() {
                         },
                     ].map(({ href, title, desc }) => (
                         <Link key={href} href={href} style={{ textDecoration: 'none' }}>
-                            <Card variant="outlined" sx={{ height: '100%', transition: 'border-color 0.2s', '&:hover': { borderColor: 'primary.main' } }}>
+                            <Card sx={{
+                                height: '100%',
+                                borderRadius: 0,
+                                boxShadow: '0 2px 20px rgba(0,0,0,0.07), 0 1px 5px rgba(0,0,0,0.05)',
+                                border: '1px solid rgba(0,0,0,0.04)',
+                                transition: 'box-shadow 0.25s, transform 0.25s',
+                                '&:hover': {
+                                    boxShadow: '0 8px 32px rgba(0,0,0,0.13)',
+                                    transform: 'translateY(-3px)',
+                                },
+                            }}>
                                 <CardContent>
                                     <Typography variant="h6" gutterBottom sx={{ fontWeight: 600 }}>{title}</Typography>
                                     <Typography variant="body2" color="text.secondary">{desc}</Typography>
