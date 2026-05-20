@@ -4,6 +4,16 @@ import PageContent from "@components/PageContent";
 import PageContainer from "@components/PageContainer";
 import { Typography } from "@mui/material";
 import Link from "next/link";
+import Ref from "@components/Ref";
+import References from "@components/References";
+import { REFS } from "@app/content/references";
+
+const PAGE_REFS = [
+    { n: 1, ...REFS.sugarCardiometabolic },
+    { n: 2, ...REFS.insulinResistance },
+    { n: 3, ...REFS.intermittentFasting },
+    { n: 4, ...REFS.autophagy },
+];
 
 const TOC = [
     { id: 'sugar',         label: 'Sugar & Health' },
@@ -15,6 +25,7 @@ const TOC = [
     { id: 'habits',        label: 'Healthy Eating Habits' },
     { id: 'reading',       label: 'Further Reading' },
     { id: 'conclusion',    label: 'Conclusion' },
+    { id: 'references',    label: 'References' },
 ];
 
 export default function Page() {
@@ -40,7 +51,7 @@ export default function Page() {
 
                 <Typography id="sugar" component="h1" variant="h1" gutterBottom sx={{ mt: 5 }}>Sugar and Its Negative Impact</Typography>
                 <Typography paragraph>
-                    Excessive sugar intake can lead to a variety of health issues, including obesity, type 2 diabetes, and heart disease.
+                    Excessive sugar intake can lead to a variety of health issues, including obesity, type 2 diabetes, and heart disease.<Ref n={1} />
                     Sugar provides empty calories with little to no nutritional value, contributing to weight gain and poor dietary habits.
                 </Typography>
                 <Typography paragraph>
@@ -64,7 +75,7 @@ export default function Page() {
                     ultra-processed foods keeps blood glucose — and therefore insulin — elevated for most of
                     the waking day. <Link href="/cells">Cells</Link>, overwhelmed by the constant signal, begin to ignore it. This is
                     insulin resistance: not a disease that arrives from outside, but a predictable adaptation
-                    to a stimulus that was never supposed to be chronic.
+                    to a stimulus that was never supposed to be chronic.<Ref n={2} />
                 </Typography>
                 <Typography paragraph>
                     Once resistance sets in, the pancreas compensates by producing <em>more</em> insulin to
@@ -111,7 +122,7 @@ export default function Page() {
                     Intermittent fasting and time-restricted eating work primarily through one mechanism:
                     they give insulin levels time to drop. When insulin is low and blood glucose is stable,
                     the body shifts to burning stored fat as its primary fuel — a process that runs cleanly
-                    and sustainably. Hunger, counterintuitively, tends to decrease once the body adapts to
+                    and sustainably.<Ref n={3} /> Hunger, counterintuitively, tends to decrease once the body adapts to
                     accessing fat stores. The frantic hunger associated with caloric restriction does not
                     appear in the same way during fasting, because the fuel is available — it is simply
                     coming from a different source.
@@ -120,7 +131,7 @@ export default function Page() {
                     This is not a new discovery. Fasting has been practiced in virtually every human culture
                     throughout history. What is new is the biochemical explanation for why it works, and the
                     research demonstrating its effects on insulin sensitivity, metabolic rate, cellular
-                    repair (autophagy), and inflammatory markers. The science supports what generations
+                    repair (autophagy),<Ref n={4} /> and inflammatory markers. The science supports what generations
                     practiced intuitively.
                 </Typography>
                 <Typography paragraph>
@@ -218,6 +229,8 @@ export default function Page() {
                 <Typography paragraph>
                     Stay informed, stay healthy!
                 </Typography>
+
+                <References items={PAGE_REFS} />
             </PageContent>
         </PageContainer>
     );

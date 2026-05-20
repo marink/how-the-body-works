@@ -1,10 +1,11 @@
 import { Typography } from "@mui/material";
 import React from "react";
+import Ref from "@components/Ref";
 
 export default function InsulinResistance() {
     return (
         <>
-            <Typography variant="h2" gutterBottom>
+            <Typography id="insulin-resistance" component="h1" variant="h1" gutterBottom sx={{ mt: 5 }}>
                 How Refined Carbohydrates Can Lead to Insulin Resistance
             </Typography>
             <Typography paragraph>
@@ -18,7 +19,7 @@ export default function InsulinResistance() {
                 <li>
                     <Typography component="span">
                         <strong>Blood Sugar Spike:</strong> Eating refined carbs causes a swift increase in blood glucose because these
-                        carbs lack fiber and are broken down very rapidly.
+                        carbs lack fiber and are broken down very rapidly.<Ref n={6} />
                     </Typography>
                 </li>
                 <li>
@@ -33,7 +34,7 @@ export default function InsulinResistance() {
                         <strong>Repetitive Cycle:</strong> If this high-sugar intake pattern happens frequently, cells are constantly
                         exposed to high insulin levels. Over time, the cells become less responsive to insulin’s signal. This condition
                         is known as <em>insulin resistance</em>, where muscle and other cells “ignore”
-                        insulin.
+                        insulin.<Ref n={7} />
                     </Typography>
                 </li>
                 <li>
@@ -62,7 +63,7 @@ export default function InsulinResistance() {
                     <Typography component="span">
                         <strong>Prediabetes and Type 2 Diabetes:</strong> The combination of insulin resistance (cells not responding)
                         and declining insulin production means blood glucose stays chronically high. This state may progress to
-                        prediabetes and eventually type 2 diabetes if interventions are not made.
+                        prediabetes and eventually type 2 diabetes if interventions are not made.<Ref n={8} />
                     </Typography>
                 </li>
             </ul>

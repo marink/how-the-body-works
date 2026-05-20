@@ -1,5 +1,6 @@
 import { Typography } from '@mui/material';
 import TwoColumnSection from '@components/TwoColumnSection';
+import Ref from '@components/Ref';
 
 // Pointy-top hexagon centered at (cx,cy) with radius r
 function hex(cx, cy, r) {
@@ -112,7 +113,7 @@ export default function GlucoseUptake() {
                 to the cell surface when <strong>insulin</strong> is present. When you eat a meal and blood
                 glucose rises, the pancreas releases insulin. Insulin binds its receptor on the cell surface,
                 triggering a signaling cascade that causes GLUT4-containing vesicles to fuse with the membrane —
-                dramatically increasing glucose uptake capacity.
+                dramatically increasing glucose uptake capacity.<Ref n={1} />
             </Typography>
             <Typography component="p" gutterBottom>
                 Once inside, glucose is immediately phosphorylated to <strong>glucose-6-phosphate (G6P)</strong>

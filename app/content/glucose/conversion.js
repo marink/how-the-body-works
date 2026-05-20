@@ -1,10 +1,11 @@
 import { Typography } from "@mui/material";
 import Link from "next/link";
+import Ref from "@components/Ref";
 
 export default function Conversion() {
     return (
         <>
-            <Typography component="h2" variant="h2" gutterBottom >
+            <Typography id="carb-digestion" component="h1" variant="h1" gutterBottom sx={{ mt: 5 }}>
                 How Carbohydrates Are Digested and Converted into Glucose
             </Typography>
 
@@ -16,7 +17,7 @@ export default function Conversion() {
                 <li>
                     <strong>Mouth:</strong> The process begins as soon as you start chewing. Saliva contains <em>amylase</em>, an
                     enzyme that starts breaking down starches (complex carbs) into smaller
-                    sugars. For example, a bite of bread or pasta begins to chemically
+                    sugars.<Ref n={1} /> For example, a bite of bread or pasta begins to chemically
                     break down while still in your mouth.
                 </li>
                 <li>
@@ -28,7 +29,7 @@ export default function Conversion() {
                 <li>
                     <strong>Small Intestine:</strong> The chyme is gradually released into the small intestine. Here, the pancreas
                     secretes pancreatic amylase into the duodenum (the first part of the small intestine) to continue the
-                    carbohydrate breakdown. Enzymes produced by the intestinal lining
+                    carbohydrate breakdown.<Ref n={2} /> Enzymes produced by the intestinal lining
                     (such as lactase, sucrase, and maltase) further break down disaccharides into
                     monosaccharides. At this stage, complex carbohydrates (like
                     starch) have been broken down into simple sugars, primarily <strong>glucose</strong> (along with fructose and
@@ -36,7 +37,7 @@ export default function Conversion() {
                 </li>
                 <li>
                     <strong>Absorption into Bloodstream:</strong> The resulting single sugars are then absorbed through the walls of
-                    the small intestine into the bloodstream. As glucose enters the
+                    the small intestine into the bloodstream.<Ref n={3} /> As glucose enters the
                     blood, blood sugar levels rise. In response, the pancreas releases the hormone
                     <strong>insulin</strong>. Insulin helps cells throughout the body
                     absorb glucose from the blood to use for energy or to store for later use (as glycogen in the liver and muscles,

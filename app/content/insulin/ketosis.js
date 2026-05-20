@@ -1,17 +1,18 @@
 import { Typography } from "@mui/material";
 import React from "react";
+import Ref from "@components/Ref";
 
 export default function KetosisVsInsulinResistance() {
     return (
         <>
-            <Typography variant="h2" gutterBottom>
+            <Typography id="ketosis" component="h1" variant="h1" gutterBottom sx={{ mt: 5 }}>
                 Ketosis vs. Insulin Resistance
             </Typography>
             <Typography paragraph>
                 <strong>Ketosis</strong> is a metabolic state in which the body burns fat for fuel and produces <em>ketones</em>,
                 typically achieved by consuming very low carbohydrates (such as on a ketogenic diet) or during prolonged fasting. In
                 ketosis, because carbohydrate intake is minimal, blood glucose stays relatively low and stable. As a result, the
-                hormone insulin is also low, since the body isn’t having to manage large influxes of glucose.
+                hormone insulin is also low, since the body isn’t having to manage large influxes of glucose.<Ref n={9} />
             </Typography>
             <Typography paragraph>
                 <strong>Insulin resistance</strong>, on the other hand, is a condition (often arising from chronically high
@@ -58,7 +59,7 @@ export default function KetosisVsInsulinResistance() {
                         harmful in the short term (as long as nutrient needs are met). Insulin resistance is a pathological state that
                         can lead to diabetes, but it can be improved or reversed with lifestyle changes (diet, exercise, weight loss).
                         In fact, low-carbohydrate or ketogenic diets are one therapeutic approach to lower blood sugar and insulin
-                        levels, giving the pancreas and cells a “break” and often improving insulin responsiveness.
+                        levels, giving the pancreas and cells a “break” and often improving insulin responsiveness.<Ref n={10} />
                     </Typography>
                 </li>
             </ul>

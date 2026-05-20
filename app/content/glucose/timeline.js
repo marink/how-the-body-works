@@ -1,10 +1,11 @@
 import { Typography, Box } from "@mui/material";
 import React from "react";
+import Ref from "@components/Ref";
 
 export default function Timeline() {
     return (
         <Box>
-            <Typography variant="h2" gutterBottom>
+            <Typography id="timeline" component="h1" variant="h1" gutterBottom sx={{ mt: 5 }}>
                 Timeline: How Long It Takes for Food to Become Glucose
             </Typography>
             <Typography paragraph>
@@ -31,13 +32,13 @@ export default function Timeline() {
                 </li>
                 <li>
                     <strong>~90 minutes:</strong> <em>Blood Sugar Peak.</em> Blood glucose typically reaches its peak about 1 to 2
-                    hours after eating.
+                    hours after eating.<Ref n={4} />
                     This is when the concentration of glucose in the blood is highest, assuming the meal contained significant
                     carbohydrates.
                 </li>
                 <li>
                     <strong>2–3 hours:</strong> <em>Return to Baseline.</em> In a healthy individual, blood sugar levels drop back
-                    toward pre-meal (fasting) levels within about 2 to 3 hours after eating, as insulin has moved glucose out of the
+                    toward pre-meal (fasting) levels within about 2 to 3 hours after eating,<Ref n={5} /> as insulin has moved glucose out of the
                     bloodstream and into cells. Any glucose that isn’t immediately
                     needed for energy has been stored (in the liver, muscles, or as fat). You may start to feel hungry again as
                     blood sugar dips, depending on the meal.

@@ -4,6 +4,9 @@ import PageContainer from '@components/PageContainer';
 import PageTitle from '@components/PageTitle';
 import { Divider, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
+import Ref from '@components/Ref';
+import References from '@components/References';
+import { REFS } from '@app/content/references';
 
 import GlucoseUptake  from '@app/content/cells/glucose-uptake';
 import Glycolysis     from '@app/content/cells/glycolysis';
@@ -11,6 +14,12 @@ import PyruvateAcetyl from '@app/content/cells/pyruvate-acetyl';
 import KrebsCycle     from '@app/content/cells/krebs-cycle';
 import ETCandATP      from '@app/content/cells/etc-atp';
 import DNARNAProtein  from '@app/content/cells/dna-rna-protein';
+
+const PAGE_REFS = [
+    { n: 1, ...REFS.glut4Transporter },
+    { n: 2, ...REFS.atpEnergyCurrency },
+    { n: 3, ...REFS.glucosePhysiology },
+];
 
 const TOC = [
     { id: 'prokaryotic',    label: 'Prokaryotic Cells' },
@@ -28,6 +37,7 @@ const TOC = [
     { id: 'krebs',          label: 'Krebs Cycle',          level: 2 },
     { id: 'etc-atp',        label: 'ETC & ATP Synthesis',  level: 2 },
     { id: 'dna-rna',        label: 'DNA, RNA & Proteins',  level: 2 },
+    { id: 'references',     label: 'References' },
 ];
 
 export default function CellsPage() {
@@ -106,14 +116,14 @@ export default function CellsPage() {
                 <Typography component="p" gutterBottom>
                     Every cell type above — whether it is a muscle cell contracting, a neuron firing an
                     impulse, or an epithelial cell repairing a wound — runs on the same universal
-                    energy currency: <strong>ATP (adenosine triphosphate)</strong>. To stay alive, human
+                    energy currency: <strong>ATP (adenosine triphosphate)</strong><Ref n={2} />. To stay alive, human
                     cells must continuously regenerate ATP from the food we eat.
                 </Typography>
                 <Typography component="p">
                     The primary fuel is <strong>glucose</strong>, a simple sugar delivered to every cell
                     by the bloodstream. Below we trace the complete journey of one glucose molecule —
                     from crossing the cell membrane all the way to the ~30 ATP molecules it ultimately
-                    generates — and show how DNA and RNA direct the molecular machinery that makes it
+                    generates<Ref n={3} /> — and show how DNA and RNA direct the molecular machinery that makes it
                     all possible.
                 </Typography>
             </Box>
@@ -124,6 +134,8 @@ export default function CellsPage() {
             <KrebsCycle />
             <ETCandATP />
             <DNARNAProtein />
+
+            <References items={PAGE_REFS} />
         </PageContainer>
     );
 }
