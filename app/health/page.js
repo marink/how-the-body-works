@@ -49,7 +49,7 @@ export default function Page() {
                 </Typography>
 
                 <Section>
-                    <Typography id="sugar" component="h1" variant="h1" gutterBottom sx={{ mt: 3.5 }}>Sugar and Its Negative Impact on the Body</Typography>
+                    <Typography id="sugar" component="h1" variant="h1" gutterBottom sx={{ mt: 2.5 }}>Sugar and Its Negative Impact on the Body</Typography>
                     <Typography paragraph>
                         Excessive sugar intake quietly drives some of the most common chronic conditions — obesity, type 2 diabetes,
                         and heart disease.<Ref n={1} /> The mechanism is not mysterious: sugar provides calories with almost no
@@ -75,7 +75,7 @@ export default function Page() {
                 </Section>
 
                 <Section alt>
-                    <Typography id="insulin" component="h1" variant="h1" gutterBottom sx={{ mt: 3.5 }}>What Chronic High Insulin Actually Does</Typography>
+                    <Typography id="insulin" component="h1" variant="h1" gutterBottom sx={{ mt: 2.5 }}>What Chronic High Insulin Actually Does</Typography>
                     <Typography paragraph>
                         Insulin is a storage hormone. When it is present, the body stores energy. When it falls, the body
                         burns stored energy. This is the basic switch — and it works elegantly when insulin rises briefly
@@ -106,14 +106,14 @@ export default function Page() {
                 </Section>
 
                 <Section>
-                    <Typography id="reconsidering" component="h1" variant="h1" gutterBottom sx={{ mt: 3.5 }}>Two Ideas Worth Reconsidering</Typography>
+                    <Typography id="reconsidering" component="h1" variant="h1" gutterBottom sx={{ mt: 2.5 }}>Two Ideas Worth Reconsidering</Typography>
                     <Typography paragraph>
                         Two pieces of mainstream dietary advice have been repeated for decades. Both treat weight as a
                         calorie-accounting problem. Neither is entirely wrong — but both miss the hormonal driver in a way
                         that leaves people confused when the advice fails them, as it so often does.
                     </Typography>
 
-                    <Typography id="eat-less" component="h2" variant="h2" gutterBottom sx={{ mt: 2 }}>Rethinking "Eat Less, Move More"</Typography>
+                    <Typography id="eat-less" component="h2" variant="h2" gutterBottom sx={{ mt: 1.5 }}>Rethinking "Eat Less, Move More"</Typography>
                     <Typography paragraph>
                         The calories-in, calories-out model describes a real physical law. Energy balance is not a myth.
                         But it is an incomplete description of what actually happens when you try to intervene by simply
@@ -131,7 +131,7 @@ export default function Page() {
                         signal that determines what the body does with those calories.
                     </Typography>
 
-                    <Typography id="snacking" component="h2" variant="h2" gutterBottom sx={{ mt: 2 }}>The Case Against Constant Snacking</Typography>
+                    <Typography id="snacking" component="h2" variant="h2" gutterBottom sx={{ mt: 1.5 }}>The Case Against Constant Snacking</Typography>
                     <Typography paragraph>
                         The advice to eat five or six small meals a day — or to snack throughout the day to
                         "keep metabolism high" — is well-intentioned but may have the opposite effect of what is intended.
@@ -148,7 +148,7 @@ export default function Page() {
                 </Section>
 
                 <Section alt>
-                    <Typography id="fasting" component="h1" variant="h1" gutterBottom sx={{ mt: 3.5 }}>Fasting: Letting Insulin Fall</Typography>
+                    <Typography id="fasting" component="h1" variant="h1" gutterBottom sx={{ mt: 2.5 }}>Fasting: Letting Insulin Fall</Typography>
                     <Typography paragraph>
                         Intermittent fasting and time-restricted eating work primarily through one mechanism:
                         they give insulin levels time to drop. When insulin is low and blood glucose is stable,
@@ -185,7 +185,7 @@ export default function Page() {
                 </Section>
 
                 <Section>
-                    <Typography id="habits" component="h1" variant="h1" gutterBottom sx={{ mt: 3.5 }}>Healthy Eating Habits</Typography>
+                    <Typography id="habits" component="h1" variant="h1" gutterBottom sx={{ mt: 2.5 }}>Healthy Eating Habits</Typography>
                     <Typography paragraph>
                         With the hormonal picture in view, the practical recommendations look somewhat different
                         from conventional advice — not contradictory, but more precisely targeted:
@@ -221,7 +221,7 @@ export default function Page() {
                 </Section>
 
                 <Section alt>
-                    <Typography id="reading" component="h1" variant="h1" gutterBottom sx={{ mt: 3.5 }}>Further Reading</Typography>
+                    <Typography id="reading" component="h1" variant="h1" gutterBottom sx={{ mt: 2.5 }}>Further Reading</Typography>
                     <Typography paragraph>
                         The following books by Dr. Jason Fung provide accessible, evidence-based treatments
                         of the topics discussed on this page. Each is grounded in peer-reviewed research
@@ -257,7 +257,7 @@ export default function Page() {
                 </Section>
 
                 <Section>
-                    <Typography id="conclusion" component="h1" variant="h1" gutterBottom sx={{ mt: 3.5 }}>Conclusion</Typography>
+                    <Typography id="conclusion" component="h1" variant="h1" gutterBottom sx={{ mt: 2.5 }}>Conclusion</Typography>
                     <Typography paragraph>
                         The frustration of doing everything right and still not seeing results is not a personal
                         failure. It is often the predictable outcome of advice that addresses calories while

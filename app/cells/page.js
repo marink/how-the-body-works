@@ -54,7 +54,7 @@ export default function CellsPage() {
             </Typography>
 
             <Section>
-                <Typography id="prokaryotic" component="h1" variant="h1" gutterBottom sx={{ mt: 3.5 }}>Prokaryotic Cells</Typography>
+                <Typography id="prokaryotic" component="h1" variant="h1" gutterBottom sx={{ mt: 2.5 }}>Prokaryotic Cells</Typography>
                 <Typography component="p" gutterBottom>
                     Prokaryotic cells are simple and do not have a nucleus or other membrane-bound organelles.
                     They are typically smaller than eukaryotic cells and are found in single-celled organisms
@@ -63,7 +63,7 @@ export default function CellsPage() {
             </Section>
 
             <Section alt>
-                <Typography id="eukaryotic" component="h1" variant="h1" gutterBottom sx={{ mt: 3.5 }}>Eukaryotic Cells</Typography>
+                <Typography id="eukaryotic" component="h1" variant="h1" gutterBottom sx={{ mt: 2.5 }}>Eukaryotic Cells</Typography>
                 <Typography component="p" gutterBottom>
                     Eukaryotic cells are more complex and have a nucleus and other membrane-bound organelles.
                     They can be single-celled or multicellular organisms, including plants, animals, and fungi.
@@ -71,28 +71,28 @@ export default function CellsPage() {
             </Section>
 
             <Section>
-                <Typography id="human-cells" component="h1" variant="h1" gutterBottom sx={{ mt: 3.5 }}>Human Cells</Typography>
+                <Typography id="human-cells" component="h1" variant="h1" gutterBottom sx={{ mt: 2.5 }}>Human Cells</Typography>
                 <Typography component="p" gutterBottom>
                     Human cells are eukaryotic cells that make up the tissues and organs of the human body.
                     They are characterized by their complex structure — nucleus, specialized organelles,
                     and a plasma membrane — and can be classified into several types:
                 </Typography>
 
-                <Typography id="muscle" component="h2" variant="h2" gutterBottom sx={{ mt: 2 }}>Muscle Cells</Typography>
+                <Typography id="muscle" component="h2" variant="h2" gutterBottom sx={{ mt: 1.5 }}>Muscle Cells</Typography>
                 <Typography component="p" gutterBottom>
                     Muscle cells, or myocytes, are specialized cells that make up muscle tissue. They are
                     responsible for producing force and enabling movement. Muscle cells are classified into
                     three types: skeletal, cardiac, and smooth muscle cells.
                 </Typography>
 
-                <Typography id="nerve" component="h2" variant="h2" gutterBottom sx={{ mt: 2 }}>Nerve Cells</Typography>
+                <Typography id="nerve" component="h2" variant="h2" gutterBottom sx={{ mt: 1.5 }}>Nerve Cells</Typography>
                 <Typography component="p" gutterBottom>
                     Nerve cells, or neurons, are specialized cells that transmit electrical signals throughout
                     the body. They have a unique structure — dendrites, axons, and synapses — allowing them
                     to communicate with each other and with other cell types.
                 </Typography>
 
-                <Typography id="epithelial" component="h2" variant="h2" gutterBottom sx={{ mt: 2 }}>Epithelial Cells</Typography>
+                <Typography id="epithelial" component="h2" variant="h2" gutterBottom sx={{ mt: 1.5 }}>Epithelial Cells</Typography>
                 <Typography component="p" gutterBottom>
                     Epithelial cells form the lining of organs and body structures. They serve as a protective
                     barrier and are involved in absorption, secretion, and sensation. They are classified by
@@ -101,7 +101,7 @@ export default function CellsPage() {
             </Section>
 
             <Section alt>
-                <Typography id="stem-cells" component="h1" variant="h1" gutterBottom sx={{ mt: 3.5 }}>Stem Cells</Typography>
+                <Typography id="stem-cells" component="h1" variant="h1" gutterBottom sx={{ mt: 2.5 }}>Stem Cells</Typography>
                 <Typography component="p" gutterBottom>
                     Stem cells have the ability to develop into different cell types. Embryonic stem cells
                     can differentiate into any cell type; adult stem cells are tissue-specific with a more
@@ -110,7 +110,7 @@ export default function CellsPage() {
             </Section>
 
             <Section>
-                <Typography id="adipose" component="h1" variant="h1" gutterBottom sx={{ mt: 3.5 }}>Adipose Tissue</Typography>
+                <Typography id="adipose" component="h1" variant="h1" gutterBottom sx={{ mt: 2.5 }}>Adipose Tissue</Typography>
                 <Typography component="p" gutterBottom>
                     Adipose tissue, or body fat, is a type of connective tissue that stores energy as fat,
                     provides insulation, and plays a central role in regulating metabolism and hormone signaling.

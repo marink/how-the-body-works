@@ -9,8 +9,9 @@ export default function Section({ children, alt = false }) {
             background: alt ? MINT : YELLOW,
             mx: { xs: -2, md: -4 },
             px: { xs: 2, md: 4 },
-            py: 1.5,
-            my: 1,
+            pt: 1,
+            pb: 1.5,
+            my: 1.25,
         }}>
             {children}
         </Box>

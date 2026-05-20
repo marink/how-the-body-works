@@ -5,7 +5,7 @@ import Ref from "@components/Ref";
 export default function InsulinResistance() {
     return (
         <>
-            <Typography id="insulin-resistance" component="h1" variant="h1" gutterBottom sx={{ mt: 3.5 }}>
+            <Typography id="insulin-resistance" component="h1" variant="h1" gutterBottom sx={{ mt: 2.5 }}>
                 How Refined Carbohydrates Can Lead to Insulin Resistance
             </Typography>
             <Typography paragraph>

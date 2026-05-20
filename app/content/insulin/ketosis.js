@@ -5,7 +5,7 @@ import Ref from "@components/Ref";
 export default function KetosisVsInsulinResistance() {
     return (
         <>
-            <Typography id="ketosis" component="h1" variant="h1" gutterBottom sx={{ mt: 3.5 }}>
+            <Typography id="ketosis" component="h1" variant="h1" gutterBottom sx={{ mt: 2.5 }}>
                 Ketosis vs. Insulin Resistance
             </Typography>
             <Typography paragraph>
