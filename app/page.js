@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Typography, Box, Card, CardContent } from "@mui/material";
 import Link from "next/link";
 
 import ContentPage from "@components/PageContainer";
@@ -28,22 +28,41 @@ export default async function Home() {
                 </Typography>
 
                 <Typography component="h1" variant="h1" gutterBottom>What You Will Find Here</Typography>
-                
+
                 <Typography component="p" gutterBottom>
-                    In this site, you will find a variety of resources designed to help you understand the human body and its functions.
-                    Here are some of the key sections:
+                    Three interconnected areas, each building on the last. Understanding how <Link href="/cells">cells</Link> work
+                    makes the <Link href="/endocrine-system">endocrine system</Link> intuitive; understanding hormones makes the
+                    <Link href="/health"> health implications of diet</Link> click into place.
                 </Typography>
-                <ul>
-                    <li>
-                        <Link href="/cells"><strong>Cells</strong>: a study of the human cells and processes.</Link>
-                    </li>
-                    <li>
-                        <Link href="/endocrine-system"><strong>Endocrine System</strong>: a thorough look at hormones and how they affect behavior.</Link>
-                    </li>
-                    <li>
-                        <Link href="/health"><strong>Health</strong>: how different foods affect body processes.</Link>
-                    </li>
-                </ul>
+
+                <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: 'repeat(3, 1fr)' }, gap: 2, mt: 2 }}>
+                    {[
+                        {
+                            href: '/cells',
+                            title: 'Cells',
+                            desc: 'How cells absorb glucose, respond to insulin signals, and convert fuel into the energy that powers every process in the body.',
+                        },
+                        {
+                            href: '/endocrine-system',
+                            title: 'Endocrine System',
+                            desc: "Hormones as the body's chemical messaging network — what they signal, how glands regulate them, and what happens when they fall out of balance.",
+                        },
+                        {
+                            href: '/health',
+                            title: 'Health',
+                            desc: 'How food choices — especially sugar and refined carbohydrates — shape insulin, metabolism, and long-term wellbeing.',
+                        },
+                    ].map(({ href, title, desc }) => (
+                        <Link key={href} href={href} style={{ textDecoration: 'none' }}>
+                            <Card variant="outlined" sx={{ height: '100%', transition: 'border-color 0.2s', '&:hover': { borderColor: 'primary.main' } }}>
+                                <CardContent>
+                                    <Typography variant="h6" gutterBottom sx={{ fontWeight: 600 }}>{title}</Typography>
+                                    <Typography variant="body2" color="text.secondary">{desc}</Typography>
+                                </CardContent>
+                            </Card>
+                        </Link>
+                    ))}
+                </Box>
             </PageContent>            
         </ContentPage>
     );

@@ -34,8 +34,8 @@ function ResponsiveAppBar() {
 
                     <AppLogo />
                     <AppName />
-
-                    {/* <AccessibilityIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
+                    <Box sx={{ flexGrow: 1 }} />
+                    <NavLinks />
 
                 </Toolbar>
             </Container>
@@ -63,11 +63,22 @@ const AppLogo = () => {
     )
 }
 
-/**
- * Application name component.
- *
- * @returns
- */
+const NavLinks = () => (
+    <Box component="nav" sx={{ display: { xs: 'none', md: 'flex' }, gap: 3, alignItems: 'center' }}>
+        {[
+            { href: '/cells', label: 'Cells' },
+            { href: '/endocrine-system', label: 'Endocrine System' },
+            { href: '/health', label: 'Health' },
+        ].map(({ href, label }) => (
+            <Link key={href} href={href} passHref legacyBehavior>
+                <Typography component="a" sx={{ fontWeight: 500, color: 'text.primary', textDecoration: 'none', fontSize: '0.95rem', '&:hover': { color: 'primary.main' } }}>
+                    {label}
+                </Typography>
+            </Link>
+        ))}
+    </Box>
+);
+
 const AppName = () => {
 
     const styles = {

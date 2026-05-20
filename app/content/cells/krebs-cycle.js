@@ -123,7 +123,7 @@ const KrebsCycleSVG = () => {
 export default function KrebsCycle() {
     return (
         <TwoColumnSection figure={<KrebsCycleSVG />} reversed>
-            <Typography variant="h2" component="h2" gutterBottom>
+            <Typography id="krebs" variant="h2" component="h2" gutterBottom>
                 Step 4 — The Krebs Cycle (Citric Acid Cycle)
             </Typography>
             <Typography component="p" gutterBottom>

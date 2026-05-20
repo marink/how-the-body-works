@@ -48,7 +48,7 @@ export default function KetosisVsInsulinResistance() {
                 <li>
                     <Typography component="span">
                         <strong>Impact on Body Weight:</strong> Ketogenic diets (leading to ketosis) often result in weight loss, which
-                        can improve insulin sensitivity over time&#8203;:contentReference[ oaicite-20]/index=20/. Insulin resistance is
+                        can improve insulin sensitivity over time. Insulin resistance is
                         frequently associated with weight gain, particularly visceral fat, which further worsens the condition.
                     </Typography>
                 </li>
@@ -68,8 +68,7 @@ export default function KetosisVsInsulinResistance() {
                 cycle of insulin resistance in some individuals by reducing blood sugar spikes and promoting weight loss. However,
                 if one switches suddenly from a ketogenic diet to eating lots of carbs, the body (which may have adapted to a
                 low-insulin state) might temporarily have a weaker insulin response (sometimes called “physiological insulin
-                resistance” in ketosis)&#8203;:contentReference[ oaicite-21]/index=21/&#8203;:contentReference[
-                oaicite-22]/index=22/.
+                resistance” in ketosis).
                 <br />
                 This is usually reversed once a more moderate diet is resumed. Overall, ketosis can be a useful tool for improving
                 insulin sensitivity when managed properly, but it should be undertaken with medical or nutritional guidance,

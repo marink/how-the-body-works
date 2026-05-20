@@ -98,7 +98,7 @@ const CentralDogmaSVG = () => (
 export default function DNARNAProtein() {
     return (
         <TwoColumnSection figure={<CentralDogmaSVG />} reversed>
-            <Typography variant="h2" component="h2" gutterBottom>
+            <Typography id="dna-rna" variant="h2" component="h2" gutterBottom>
                 The Blueprint: DNA, RNA & the Enzymes of Energy
             </Typography>
             <Typography component="p" gutterBottom>

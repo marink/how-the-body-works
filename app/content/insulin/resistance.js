@@ -25,7 +25,7 @@ export default function InsulinResistance() {
                     <Typography component="span">
                         <strong>Insulin Surge:</strong> In response, the pancreas secretes insulin to enable cells to absorb the
                         glucose. Insulin drives sugar out of the bloodstream into muscles, fat, and liver cells for use or
-                        storage&#8203;:contentReference[ oaicite-17]/index=17/.
+                        storage.
                     </Typography>
                 </li>
                 <li>
@@ -33,14 +33,14 @@ export default function InsulinResistance() {
                         <strong>Repetitive Cycle:</strong> If this high-sugar intake pattern happens frequently, cells are constantly
                         exposed to high insulin levels. Over time, the cells become less responsive to insulin’s signal. This condition
                         is known as <em>insulin resistance</em>, where muscle and other cells “ignore”
-                        insulin&#8203;:contentReference[ oaicite-18]/index=18/.
+                        insulin.
                     </Typography>
                 </li>
                 <li>
                     <Typography component="span">
                         <strong>Elevated Insulin & Blood Sugar:</strong> As insulin resistance develops, the body compensates by
                         producing even more insulin after meals to force cells to take up glucose. Blood sugar stays elevated longer
-                        than normal since cells aren’t responding efficiently&#8203;:contentReference[ oaicite-19]/index=19/. High
+                        than normal since cells aren’t responding efficiently. High
                         insulin levels (hyperinsulinemia) become chronic.
                     </Typography>
                 </li>

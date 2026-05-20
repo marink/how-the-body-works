@@ -79,7 +79,7 @@ const PyruvateAcetylSVG = () => (
 export default function PyruvateAcetyl() {
     return (
         <TwoColumnSection figure={<PyruvateAcetylSVG />}>
-            <Typography variant="h2" component="h2" gutterBottom>
+            <Typography id="pyruvate" variant="h2" component="h2" gutterBottom>
                 Step 3 — Pyruvate Enters the Mitochondria
             </Typography>
             <Typography component="p" gutterBottom>

@@ -99,7 +99,7 @@ const GlucoseUptakeSVG = () => (
 export default function GlucoseUptake() {
     return (
         <TwoColumnSection figure={<GlucoseUptakeSVG />}>
-            <Typography variant="h2" component="h2" gutterBottom>
+            <Typography id="glucose-uptake" variant="h2" component="h2" gutterBottom>
                 Step 1 — Glucose Enters the Cell
             </Typography>
             <Typography component="p" gutterBottom>

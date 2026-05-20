@@ -12,10 +12,27 @@ import KrebsCycle     from '@app/content/cells/krebs-cycle';
 import ETCandATP      from '@app/content/cells/etc-atp';
 import DNARNAProtein  from '@app/content/cells/dna-rna-protein';
 
+const TOC = [
+    { id: 'prokaryotic',    label: 'Prokaryotic Cells' },
+    { id: 'eukaryotic',     label: 'Eukaryotic Cells' },
+    { id: 'human-cells',    label: 'Human Cells' },
+    { id: 'muscle',         label: 'Muscle Cells',         level: 2 },
+    { id: 'nerve',          label: 'Nerve Cells',          level: 2 },
+    { id: 'epithelial',     label: 'Epithelial Cells',     level: 2 },
+    { id: 'stem-cells',     label: 'Stem Cells' },
+    { id: 'adipose',        label: 'Adipose Tissue' },
+    { id: 'energy',         label: 'Energy & Metabolism' },
+    { id: 'glucose-uptake', label: 'Glucose Uptake',       level: 2 },
+    { id: 'glycolysis',     label: 'Glycolysis',           level: 2 },
+    { id: 'pyruvate',       label: 'Pyruvate → Acetyl-CoA',level: 2 },
+    { id: 'krebs',          label: 'Krebs Cycle',          level: 2 },
+    { id: 'etc-atp',        label: 'ETC & ATP Synthesis',  level: 2 },
+    { id: 'dna-rna',        label: 'DNA, RNA & Proteins',  level: 2 },
+];
 
 export default function CellsPage() {
     return (
-        <PageContainer>
+        <PageContainer toc={TOC}>
             <PageTitle title="Cells: The Building Blocks of Life" />
 
             <Typography component="p" gutterBottom>
@@ -25,55 +42,55 @@ export default function CellsPage() {
                 <strong> eukaryotic</strong> (nucleus-bearing, e.g. all plant, animal, and fungal cells).
             </Typography>
 
-            <Typography component="h1" variant="h1" gutterBottom sx={{ mt: 3 }}>Prokaryotic Cells</Typography>
+            <Typography id="prokaryotic" component="h1" variant="h1" gutterBottom sx={{ mt: 5 }}>Prokaryotic Cells</Typography>
             <Typography component="p" gutterBottom>
                 Prokaryotic cells are simple and do not have a nucleus or other membrane-bound organelles.
                 They are typically smaller than eukaryotic cells and are found in single-celled organisms
                 like bacteria.
             </Typography>
 
-            <Typography component="h1" variant="h1" gutterBottom sx={{ mt: 3 }}>Eukaryotic Cells</Typography>
+            <Typography id="eukaryotic" component="h1" variant="h1" gutterBottom sx={{ mt: 5 }}>Eukaryotic Cells</Typography>
             <Typography component="p" gutterBottom>
                 Eukaryotic cells are more complex and have a nucleus and other membrane-bound organelles.
                 They can be single-celled or multicellular organisms, including plants, animals, and fungi.
             </Typography>
 
-            <Typography component="h1" variant="h1" gutterBottom sx={{ mt: 3 }}>Human Cells</Typography>
+            <Typography id="human-cells" component="h1" variant="h1" gutterBottom sx={{ mt: 5 }}>Human Cells</Typography>
             <Typography component="p" gutterBottom>
                 Human cells are eukaryotic cells that make up the tissues and organs of the human body.
                 They are characterized by their complex structure — nucleus, specialized organelles,
                 and a plasma membrane — and can be classified into several types:
             </Typography>
 
-            <Typography component="h2" variant="h2" gutterBottom>Muscle Cells</Typography>
+            <Typography id="muscle" component="h2" variant="h2" gutterBottom sx={{ mt: 3 }}>Muscle Cells</Typography>
             <Typography component="p" gutterBottom>
                 Muscle cells, or myocytes, are specialized cells that make up muscle tissue. They are
                 responsible for producing force and enabling movement. Muscle cells are classified into
                 three types: skeletal, cardiac, and smooth muscle cells.
             </Typography>
 
-            <Typography component="h2" variant="h2" gutterBottom>Nerve Cells</Typography>
+            <Typography id="nerve" component="h2" variant="h2" gutterBottom sx={{ mt: 3 }}>Nerve Cells</Typography>
             <Typography component="p" gutterBottom>
                 Nerve cells, or neurons, are specialized cells that transmit electrical signals throughout
                 the body. They have a unique structure — dendrites, axons, and synapses — allowing them
                 to communicate with each other and with other cell types.
             </Typography>
 
-            <Typography component="h2" variant="h2" gutterBottom>Epithelial Cells</Typography>
+            <Typography id="epithelial" component="h2" variant="h2" gutterBottom sx={{ mt: 3 }}>Epithelial Cells</Typography>
             <Typography component="p" gutterBottom>
                 Epithelial cells form the lining of organs and body structures. They serve as a protective
                 barrier and are involved in absorption, secretion, and sensation. They are classified by
                 shape: squamous, cuboidal, and columnar.
             </Typography>
 
-            <Typography component="h1" variant="h1" gutterBottom sx={{ mt: 3 }}>Stem Cells</Typography>
+            <Typography id="stem-cells" component="h1" variant="h1" gutterBottom sx={{ mt: 5 }}>Stem Cells</Typography>
             <Typography component="p" gutterBottom>
                 Stem cells have the ability to develop into different cell types. Embryonic stem cells
                 can differentiate into any cell type; adult stem cells are tissue-specific with a more
                 limited range.
             </Typography>
 
-            <Typography component="h1" variant="h1" gutterBottom sx={{ mt: 3 }}>Adipose Tissue</Typography>
+            <Typography id="adipose" component="h1" variant="h1" gutterBottom sx={{ mt: 5 }}>Adipose Tissue</Typography>
             <Typography component="p" gutterBottom>
                 Adipose tissue, or body fat, is a type of connective tissue that stores energy as fat,
                 provides insulation, and plays a central role in regulating metabolism and hormone signaling.
@@ -83,7 +100,7 @@ export default function CellsPage() {
             <Divider sx={{ my: 5 }} />
 
             <Box sx={{ mb: 5 }}>
-                <Typography component="h1" variant="h1" gutterBottom>
+                <Typography id="energy" component="h1" variant="h1" gutterBottom>
                     Energy &amp; Metabolism: Inside the Human Cell
                 </Typography>
                 <Typography component="p" gutterBottom>

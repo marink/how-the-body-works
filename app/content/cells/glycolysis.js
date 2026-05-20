@@ -98,7 +98,7 @@ const GlycolysisSVG = () => (
 export default function Glycolysis() {
     return (
         <TwoColumnSection figure={<GlycolysisSVG />} reversed>
-            <Typography variant="h2" component="h2" gutterBottom>
+            <Typography id="glycolysis" variant="h2" component="h2" gutterBottom>
                 Step 2 — Glycolysis: Splitting Glucose in the Cytoplasm
             </Typography>
             <Typography component="p" gutterBottom>

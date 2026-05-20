@@ -31,15 +31,14 @@ export default function Timeline() {
                 </li>
                 <li>
                     <strong>~90 minutes:</strong> <em>Blood Sugar Peak.</em> Blood glucose typically reaches its peak about 1 to 2
-                    hours after eating&#8203;:contentReference[ oaicite-14]/index=14/&#8203;:contentReference[
-                    oaicite-15]/index=15/.
+                    hours after eating.
                     This is when the concentration of glucose in the blood is highest, assuming the meal contained significant
                     carbohydrates.
                 </li>
                 <li>
                     <strong>2–3 hours:</strong> <em>Return to Baseline.</em> In a healthy individual, blood sugar levels drop back
                     toward pre-meal (fasting) levels within about 2 to 3 hours after eating, as insulin has moved glucose out of the
-                    bloodstream and into cells&#8203;:contentReference[ oaicite-16]/index=16/. Any glucose that isn’t immediately
+                    bloodstream and into cells. Any glucose that isn’t immediately
                     needed for energy has been stored (in the liver, muscles, or as fat). You may start to feel hungry again as
                     blood sugar dips, depending on the meal.
                 </li>

@@ -124,7 +124,7 @@ const ETCSVG = () => (
 export default function ETCandATP() {
     return (
         <TwoColumnSection figure={<ETCSVG />}>
-            <Typography variant="h2" component="h2" gutterBottom>
+            <Typography id="etc-atp" variant="h2" component="h2" gutterBottom>
                 Step 5 — Electron Transport Chain & ATP Synthesis
             </Typography>
             <Typography component="p" gutterBottom>
