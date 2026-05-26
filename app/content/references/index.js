@@ -108,6 +108,88 @@ export const REFS = {
         url: "https://pubmed.ncbi.nlm.nih.gov/22855643/",
     },
 
+    // ── Hyperglycemia & diabetic complications ────────────────────────────────
+    brownleeUnifyingMechanism: {
+        authors: "Brownlee M",
+        title: "The Pathobiology of Diabetic Complications: A Unifying Mechanism",
+        journal: "Diabetes",
+        year: "2005",
+        url: "https://pubmed.ncbi.nlm.nih.gov/15919781/",
+    },
+    advancedGlycationEndProducts: {
+        authors: "Twarda-Clapa A, Olczak A, Białkowska AM, Koziołkiewicz M",
+        title: "Advanced Glycation End-Products (AGEs): Formation, Chemistry, Classification, Receptors, and Diseases Related to AGEs",
+        journal: "Cells",
+        year: "2022",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9139786/",
+    },
+    mitochondrialDysfunctionDiabetes: {
+        authors: "Bhatt MP, Ha HC, Kim YM, Ha KS",
+        title: "Diabetic Conditions Promote the Loss of the Blood–Brain Barrier Integrity through Mitochondrial Dysfunction",
+        journal: "International Journal of Molecular Sciences",
+        year: "2022",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8910741/",
+    },
+    apoptosisHighGlucose: {
+        authors: "Fiorentino TV, Prioletta A, Zuo P, Folli F",
+        title: "Hyperglycemia-induced oxidative stress and its role in diabetes mellitus related cardiovascular diseases",
+        journal: "Current Pharmaceutical Design",
+        year: "2013",
+        url: "https://pubmed.ncbi.nlm.nih.gov/23127236/",
+    },
+    // ── Diabetic retinopathy ──────────────────────────────────────────────────
+    cheungRetinopathy: {
+        authors: "Cheung N, Mitchell P, Wong TY",
+        title: "Diabetic retinopathy",
+        journal: "The Lancet",
+        year: "2010",
+        url: "https://pubmed.ncbi.nlm.nih.gov/20580421/",
+    },
+    antonettiRetinopathy: {
+        authors: "Antonetti DA, Klein R, Gardner TW",
+        title: "Diabetic retinopathy",
+        journal: "New England Journal of Medicine",
+        year: "2012",
+        url: "https://pubmed.ncbi.nlm.nih.gov/22455417/",
+    },
+    pericyteLoss: {
+        authors: "Eshaq RS, Aldalati AMZ, Alexander JS, Harris NR",
+        title: "Diabetic retinopathy: Breaking the barrier",
+        journal: "Pathophysiology",
+        year: "2017",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28757174/",
+    },
+    vegfRetina: {
+        authors: "Stewart MW",
+        title: "The expanding role of vascular endothelial growth factor inhibitors in ophthalmology",
+        journal: "Mayo Clinic Proceedings",
+        year: "2012",
+        url: "https://pubmed.ncbi.nlm.nih.gov/22469347/",
+    },
+
+    // ── Dr Fung books ─────────────────────────────────────────────────────────
+    fung_diabetesCode: {
+        authors: "Fung J",
+        title: "The Diabetes Code: Prevent and Reverse Type 2 Diabetes Naturally",
+        journal: "Greystone Books",
+        year: "2018",
+        url: "https://www.greystonebooks.com/products/the-diabetes-code",
+    },
+    taylorTwinCycle: {
+        authors: "Taylor R",
+        title: "Pathogenesis of type 2 diabetes: tracing the reverse route from cure to cause",
+        journal: "Diabetologia",
+        year: "2008",
+        url: "https://pubmed.ncbi.nlm.nih.gov/18726069/",
+    },
+    limFattyPancreas: {
+        authors: "Lim EL, Hollingsworth KG, Aribisala BS, Chen MJ, Mathers JC, Taylor R",
+        title: "Reversal of type 2 diabetes: normalisation of beta cell function in association with decreased pancreas and liver triacylglycerol",
+        journal: "Diabetologia",
+        year: "2011",
+        url: "https://pubmed.ncbi.nlm.nih.gov/21656330/",
+    },
+
     // ── Intermittent fasting & autophagy ─────────────────────────────────────
     intermittentFasting: {
         authors: "Cho Y, Hong N, Kim KW, et al.",

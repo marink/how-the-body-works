@@ -69,11 +69,9 @@ const NavLinks = () => (
             { href: '/cells', label: 'Cells' },
             { href: '/endocrine-system', label: 'Endocrine System' },
         ].map(({ href, label }) => (
-            <Link key={href} href={href} passHref legacyBehavior>
-                <Typography component="a" sx={{ fontWeight: 500, color: 'text.primary', textDecoration: 'none', fontSize: '0.95rem', '&:hover': { color: 'primary.main' } }}>
-                    {label}
-                </Typography>
-            </Link>
+            <Typography key={href} component={Link} href={href} sx={{ fontWeight: 500, color: 'text.primary', textDecoration: 'none', fontSize: '0.95rem', '&:hover': { color: 'primary.main' } }}>
+                {label}
+            </Typography>
         ))}
     </Box>
 );
@@ -93,16 +91,15 @@ const AppName = () => {
     };
 
     return (        
-        <Link href="/" passHref legacyBehavior>
-            <Typography
-                variant="h6"
-                component="a"
-                noWrap
-                sx={styles}
-            >
-                How the Body Works
-            </Typography>
-        </Link>
+        <Typography
+            variant="h6"
+            component={Link}
+            href="/"
+            noWrap
+            sx={styles}
+        >
+            How the Body Works
+        </Typography>
     )
 }
 
