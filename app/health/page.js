@@ -275,6 +275,11 @@ export default function Page() {
                         resistance already know from experience: it is not about eating less. It is about
                         giving the body the conditions it needs to do what it was always designed to do.
                     </Typography>
+                    <Typography paragraph>
+                        The same pattern, a signal flooded until the body stops listening to it, is not unique
+                        to insulin. The brain's reward system follows the same rules with dopamine:{' '}
+                        <Link href="/health/dopamine">Dopamine and Gaming: The Same Trap as Sugar</Link>.
+                    </Typography>
                 </Section>
 
                 <References items={PAGE_REFS} />
